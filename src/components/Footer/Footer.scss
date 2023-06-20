@@ -1,0 +1,63 @@
+@import '../../assets/styles/main.scss';
+@import '../Header/Logo.scss';
+
+.footer {
+  background-color: $colorPrincipal;
+  height: 220px;
+  display: flex;
+  padding: 20px 100px;
+  color: $colorTexto;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .logo--footer__container {
+    display: flex;
+    margin-right: 60px;
+  }
+  div h2 {
+    margin-bottom: 10px;
+  }
+  &__seguinos i {
+    width: 50px;
+    font-size: 35px;
+    color: $colorRojoOscuro;
+    margin-bottom: 15px;
+  }
+  li a {
+    color: $colorTexto;
+  }
+}
+.footer__seguinos a i:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+  }
+
+/*MQ DEL FOOTER*/
+@media (max-width: 1300px) { 
+  .footer {
+    padding: 20px 40px;;
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+      height: 550px;
+      display: block;
+  }
+  .logo--footer__container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+      width: 100%;
+  }
+  .footer__container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+  .footer__container div {
+      margin-bottom: 15px;
+      text-align: center;
+  }
+}

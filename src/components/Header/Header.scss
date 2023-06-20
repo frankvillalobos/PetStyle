@@ -7,10 +7,17 @@ header {
   position: relative;
   justify-content: space-between;
   text-align: center;
-  padding: 15px 30px;
+  padding: 15px 100px;
   border-bottom: 4px solid lightgrey;
-  flex-flow: row nowrap; //new
+  flex-flow: row nowrap;
 }
+
+@media (max-width: 1300px) { 
+  header {
+    padding: 15px 40px;
+  }
+}
+
 
 @media (max-width: 1024px) { 
   header {

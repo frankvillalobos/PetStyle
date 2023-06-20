@@ -1,6 +1,7 @@
 import './App.css';
-import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Hero
         titulo= {'Ver juguetes'} 
       />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,11 @@
+<App>
+  <Layout>
+    <header>
+      <Logo/>
+      <SearchBox/>
+      <NavBar>
+        <BurguerButton/>
+      </NavBar>
+    </header>
+  </Layout>
+</App>

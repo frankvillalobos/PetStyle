@@ -1,0 +1,87 @@
+@import '../../assets/styles/main.scss';
+
+.toggle-menu {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+}
+.fa-bars {
+    width: 30px;
+    height:30px;
+    position: absolute;
+    color: $colorTexto;
+    font-size: 35px;
+}
+.nav__container {
+    display: flex;
+}
+.nav,
+.nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav ul li {
+    margin: 0 .5em;
+}
+.nav ul li a {
+    color: $colorTexto;
+}
+.nav__shopping--cart {
+    display: flex;
+    align-items: center;
+}
+.nav ul li:hover,
+.fas:hover {
+   transform: scale(1.1);
+   }
+ul li:hover a:hover,
+.fas:hover {
+       font-weight: bold;
+   }
+@media (max-width:1024px) {
+    .toggle-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 85px;
+    }
+    .nav {
+        width:100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 0vh;
+        opacity: 0;
+        overflow: hidden;
+        transition: all .5s ease;
+        
+    }
+    .nav.isActive {
+        height:35vh;
+        opacity: 1;
+        background-color: #8d6247;
+    }
+    .nav ul {
+        flex-direction: column;
+    }
+    .nav ul li {
+        margin: 10px 0;
+    }
+    .nav ul li a {
+        color: white;
+    }
+    .nav__shopping--cart {
+        
+        position: absolute;
+        top: 25px;
+        right: 100px;
+        cursor: pointer;
+    }
+    .fa-shopping-cart {
+        font-size: 23px;
+    }
+}

@@ -1,0 +1,58 @@
+@import '../../assets/styles/main.scss';
+
+.nav__search--box {
+    display: flex;
+    margin: auto 20px auto 20px;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+} 
+.nav__search--box input {
+    border: 1px solid $colorSecundario;
+    border-radius: 20px;
+    outline: none;
+    background-color: transparent;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 700px;
+}
+.nav__search--box span:hover {
+    color: $colorTexto;
+}
+.nav__search--box span {
+    color: $colorSecundario;
+    font-size: 20px;
+    height: 100%;
+    padding: 8px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+@media (max-width: 1400px) {
+    .nav__search--box input {
+        width: 350px;
+    }
+    .nav__search--box {
+        margin: auto 30px auto 30px;
+    }
+}
+
+/* MQ NAV BAR*/
+@media (max-width: 1024px) { 
+  .nav__search--box{
+      width: 100%;
+      display: inline-flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin-left: 0;
+  }
+  .nav__search--box span {
+      right: 7%;
+  }
+  .nav__search--box input {
+      width: 90%;
+  }
+}

@@ -1,0 +1,25 @@
+$fuentePrincipal: 'Barlow', sans-serif;
+$colorPrincipal: #f4ce9f;
+$colorSecundario: #ed9a9a;
+$colorRojoOscuro: #bc6466;
+$colorFondo: #f4e8d8;
+$colorTexto: #8d6247;
+$colorRojo: #ff9597;
+$colorVerde: #cae0a2;
+/* Globales */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $fuentePrincipal;
+  box-sizing: border-box;
+  font-size: 20px;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+body {
+  background-color: $colorFondo;
+  color: $colorTexto;
+}

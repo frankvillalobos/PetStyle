@@ -1,0 +1,21 @@
+@import '../../assets/styles/main.scss';
+
+header {
+  display: flex;
+  width: 100%;
+  background-color: $colorPrincipal;
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+  padding: 15px 30px;
+  border-bottom: 4px solid lightgrey;
+  flex-flow: row nowrap; //new
+}
+
+@media (max-width: 1024px) { 
+  header {
+      display: block;
+      padding: 0;
+      position: absolute;
+  }
+}

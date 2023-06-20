@@ -1,0 +1,39 @@
+@import '../../assets/styles/main.scss';
+
+.nav__logo {
+  display: flex;
+  width: 150px;
+}
+.logo {
+  a {
+      color: $colorRojoOscuro;
+      font-size: 35px;
+      font-weight: 800;
+      }
+  span {
+      font-size: 35px;
+      font-weight: 800;
+      color: $colorSecundario;
+      cursor: pointer;
+        }
+  img {
+      color: white;
+      width: 50px;
+      height: 50px;
+      transform: rotate();
+      transition: transform 129ms ease-out;
+  &:hover {
+      transform: rotate(10deg) translate(10px, 0px) skew(1deg, 0deg);
+          }
+        }
+      }
+
+/* MQ NAV BAR*/
+@media (max-width: 1024px) { 
+  .nav__logo {
+      display: flex;
+      padding: 15px 30px;
+      justify-content: center;
+      width: auto;
+  }
+}

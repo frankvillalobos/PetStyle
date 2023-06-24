@@ -1,0 +1,35 @@
+@import '../../assets/styles/main.scss';
+@import './CardList.scss';
+
+.card {
+  padding: 2px;
+  height: 320px;
+  .image__container {
+    height: 80%;
+  }
+  .content__container {
+    height: 20%;
+    background-color: #f4f4f4;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 5px;
+    text-align: center;
+    transition: 0.2s all ease;
+  }
+  img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  &:hover {
+    background-color: white;
+    padding: 0;
+    position: relative;
+
+    .content__container {
+      background-color: $colorSecundario;
+      color: white;
+      position: relative;
+    }
+  }
+}

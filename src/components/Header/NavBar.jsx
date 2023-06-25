@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './NavBar.scss';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -10,29 +11,36 @@ const NavBar = () => {
     }
 
   return (
-    <>
+      <>
+        <button 
+          onClick={ toggleMenu }
+          className='toggle-menu'>
+          <span className="fa fa-bars" id="bars"></span>
+        </button>
 
-      <button 
-        onClick={ toggleMenu }
-        className='toggle-menu'>
-        <span className="fa fa-bars" id="bars"></span>
-      </button>
+        <div className='nav__container'>
+          <div className="nav__shopping--cart">
+            <i className="fas fa-shopping-cart"></i>
+          </div>
 
-      <div className='nav__container'>
-        <div className="nav__shopping--cart">
-          <i className="fas fa-shopping-cart"></i>
+          <nav className={ `nav ${ menu ? 'isActive' : ''}` }>
+            <ul>
+                {/* <li>
+                  <link to='/Productos'>Productos</link>
+                </li> */}
+                <li>
+                  <Link to='/Nosotros'>Nosotros</Link>
+                </li>
+                {/* <li>
+                  <link to='/Alta'>Dar Alta</link>
+                </li>
+                <li>
+                <link to='/Contacto'>Contacto</link>
+                </li> */}
+            </ul>
+          </nav>
         </div>
-
-        <nav className={ `nav ${ menu ? 'isActive' : ''}` }>
-          <ul>
-              <li><a href="#">Productos</a></li>
-              <li><a href="./nosotros.html">Nosotros</a></li>
-              <li><a href="./alta.html">Dar alta</a></li>
-              <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-    </>
+      </>
   );
 }
 

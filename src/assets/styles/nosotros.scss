@@ -1,0 +1,57 @@
+@import '../styles/main.scss';
+
+.nosotros {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  height: 700px;
+  padding: 10px;
+  &__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div {
+      // background-image: url(../images/perro-nosotros.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 90%;
+      height: 500px;
+      transition: background-size 1s ease;
+      &:hover {
+        background-size: 110%;
+      }
+    }
+    p {
+      font-style: italic;
+      font-size: 12px;
+    }
+  }
+  &__container {
+    padding: 20px 30px 0 0;
+
+    h2 {
+      margin: 70px 0 20px 0;
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 1024px) {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+    &__container h2 {
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding-top: 150px;
+  }
+}

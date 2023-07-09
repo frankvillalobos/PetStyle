@@ -58,7 +58,7 @@ ul li:hover a:hover,
         opacity: 0;
         overflow: hidden;
         transition: all .5s ease;
-        
+        position: absolute;
     }
     .nav.isActive {
         height:35vh;

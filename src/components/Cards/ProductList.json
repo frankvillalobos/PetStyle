@@ -1,41 +1,41 @@
 [
   {
-    "image": "../../assets/images/toy2.png",
+    "image": "./images/toy2.png",
     "name": "Pelota Antiestrés",
     "price": 250.00
 },
 {
-    "image": "../../assets/images/toy5.png",
+    "image": "./images/toy5.png",
     "name": "Peluche ecológico",
     "price": 500.00
 },
 {
-    "image": "../../assets/images/toy8.webp",
+    "image": "./images/toy8.webp",
     "name": "Peluche verde",
     "price": 600.00
 },
 {
-    "image": "../../assets/images/toy10.webp",
+    "image": "./images/toy10.webp",
     "name": "Bowl y pelota",
     "price": 700.00
 },
 {
-    "image": "../../assets/images/toy11.png",
+    "image": "./images/toy11.png",
     "name": "Peluche químico",
     "price": 300.00
 },
 {
-    "image": "../../assets/images/toy12.webp",
+    "image": "./images/toy12.webp",
     "name": "Pelota crujiente",
     "price": 300.00
 },
 {
-    "image": "../../assets/images/toy14.webp",
+    "image": "./images/toy14.webp",
     "name": "Monstruo azul",
     "price": 200.00
 },
 {
-    "image": "../../assets/images/toy15.png",
+    "image": "./images/toy15.png",
     "name": "Pelota perrito",
     "price": 400.00
 }

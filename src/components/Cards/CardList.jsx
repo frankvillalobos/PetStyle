@@ -16,9 +16,8 @@ const CardList = () => {
 
   return (
     <div id="cards__container">
-      {products.map((product, index) => (
+      {products.map((product) => (
         <Card
-          key={index}
           image={product.image}
           name={product.name}
           price={product.price}

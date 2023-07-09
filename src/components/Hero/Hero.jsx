@@ -3,8 +3,8 @@ import './Hero.scss'
 
 const Hero = ({ titulo }) => {
   return (
-    <div class="hero">
-      <button class="hero__boton" type="button">{titulo}</button>
+    <div className="hero" style={{backgroundImage: `url("./images/hero-image.jpg")`}}>
+      <button className="hero__boton" type="button">{titulo}</button>
     </div>
   );
 }

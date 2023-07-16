@@ -4,7 +4,7 @@
     display: none;
     cursor: pointer;
     position: relative;
-    margin: auto;
+    margin: 0;
 }
 .fa-bars {
     width: 30px;
@@ -75,7 +75,6 @@ ul li:hover a:hover,
         color: white;
     }
     .nav__shopping--cart {
-        
         position: absolute;
         top: 25px;
         right: 100px;

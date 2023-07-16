@@ -15,6 +15,7 @@ header {
 @media (max-width: 1300px) { 
   header {
     padding: 15px 40px;
+    position: absolute;
   }
 }
 
@@ -23,6 +24,5 @@ header {
   header {
       display: block;
       padding: 0;
-      position: relative;
   }
 }

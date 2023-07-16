@@ -25,18 +25,18 @@ const NavBar = () => {
 
           <nav className={ `nav ${ menu ? 'isActive' : ''}` }>
             <ul>
-                {/* <li>
-                  <link to='/Productos'>Productos</link>
-                </li> */}
+                <li>
+                  <Link to='/Productos'>Productos</Link>
+                </li>
                 <li>
                   <Link to='/Nosotros'>Nosotros</Link>
                 </li>
-                {/* <li>
-                  <link to='/Alta'>Dar Alta</link>
+                <li>
+                  <Link to='/Alta'>Dar Alta</Link>
                 </li>
                 <li>
-                <link to='/Contacto'>Contacto</link>
-                </li> */}
+                  <Link to='/Contacto'>Contacto</Link>
+                </li>
             </ul>
           </nav>
         </div>

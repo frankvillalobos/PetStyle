@@ -1,0 +1,100 @@
+@import '../styles/main.scss';
+
+.form__container {
+  width: 100%;
+  margin: 50px auto 100px auto;
+}
+.form {
+  margin: 0 auto;
+  padding: 20px;
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px;
+    color: $colorTexto;
+  }
+  &__field {
+    margin: 20px auto;
+    padding: 0 20px;
+    width: 100%;
+    height: 100px;
+    label {
+      color: $colorTexto;
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: block;
+    }
+    input,
+    &--envio,
+    &--categoria,
+    &--tamano,
+    textarea {
+      width: 100%;
+      border-bottom: 2px solid $colorSecundario;
+      height: 30px;
+      background-color: transparent;
+    }
+    textarea {
+      height: 100px;
+    }
+    /* Estilos al boton de subir file*/
+    input[type="file"] {
+      color: $colorTexto;
+    }
+    &--error {
+      color: red;
+    }
+  }
+  /* Estilos al boton de enviar*/
+  &__boton {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    .boton {
+      background-color: $colorRojoOscuro;
+      color: white;
+      font-weight: bold;
+      padding: 10px 30px;
+      margin-top: 30px;
+      font-size: 20px;
+      text-transform: uppercase;
+      width: 90%;
+      text-align: center;
+      border-radius: 20px;
+      border: none;
+      &:hover {
+        cursor: pointer;
+        background-color: $colorRojo;
+      }
+    }
+  }
+}
+/* MQ DE LA PAGINA DE ALTA */
+@media (min-width: 768px) {
+  .form__container {
+    padding: 0 40px;
+  }
+  .boton {
+    max-width: 30%;
+    height: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .form h2 {
+      font-size: 38px;
+    }
+  .form_field--container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form__field {
+    flex: 1 0 calc(50% - 10px);
+    margin: 5px;
+  }
+  .form__field:last-child {
+    flex-basis: 100%;
+  }
+  }
+

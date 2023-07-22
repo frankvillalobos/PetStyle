@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import CardList from './components/Cards/CardList';
 import Nosotros from './Nosotros';
 import Contacto from './Contacto';
+import Alta from './Alta';
 
 function App() {
   return (
@@ -15,13 +16,19 @@ function App() {
 
         <Routes>
           <Route path="/Nosotros" element={<Nosotros />} />
-          <Route path={["/" | "/index.html"]} element={
+          <Route path="/index.html"element={
             <>
               <Hero titulo={'Ver juguetes'} />
               <CardList />
             </>
           } />
-          {/* <Route path="/Alta" element={<ProductForm />} /> */}
+            <Route exact path="/"element={
+            <>
+              <Hero titulo={'Ver juguetes'} />
+              <CardList />
+            </>
+          } />
+          <Route path="/Alta" element={<Alta />} /> 
           <Route path="/Contacto" element={<Contacto />} />
         </Routes>
 

@@ -1,14 +1,15 @@
 import React from 'react';
-import '../src/assets/styles/nosotros.scss';
-import ProductForm from './components/Formularios/ProductForm';
-
+import AltaForm from './components/Formularios/AltaForm';
+import '../src/assets/styles/alta.scss';
 
 const Alta = () => {
- return (
-  <main>
-    <ProductForm />
-  </main>
- );
- }
+    return (
+        <main>
+            <div className='form__container'>
+                <AltaForm />
+            </div>
+        </main>
+    );
+}
 
 export default Alta;
